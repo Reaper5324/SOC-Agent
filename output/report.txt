@@ -1,0 +1,54 @@
+SOC Agent Analysis Report
+==========================
+
+Incident 1: Alert activity from 192.168.1.77 to 45.83.64.1
+Severity: critical
+Analysis source: fallback (Unable to reach Ollama at http://127.0.0.1:11434: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>)
+Related events: 1
+Escalation required: Yes
+Why it matters: ET TROJAN C2 Beacon Detected
+Next actions:
+- Validate the alert against surrounding network telemetry.
+- Identify the affected host owner and review recent process activity.
+- Escalate to incident response for containment review.
+
+Incident 2: Alert activity from 192.168.1.88 to 203.0.113.45
+Severity: high
+Analysis source: fallback (Unable to reach Ollama at http://127.0.0.1:11434: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>)
+Related events: 1
+Escalation required: Yes
+Why it matters: ET SCAN Possible RDP Brute Force
+Next actions:
+- Validate the alert against surrounding network telemetry.
+- Identify the affected host owner and review recent process activity.
+- Escalate to incident response for containment review.
+
+Incident 3: Connection activity from 10.0.0.5 to 239.255.255.250
+Severity: medium
+Analysis source: fallback (Unable to reach Ollama at http://127.0.0.1:11434: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>)
+Related events: 1
+Escalation required: No
+Why it matters: UDP connection observed to 239.255.255.250:1900
+Next actions:
+- Confirm whether the UDP destination and service are expected.
+- Continue triage and tune detections if activity is benign.
+
+Incident 4: Connection activity from 192.168.56.12 to 192.168.56.255
+Severity: medium
+Analysis source: fallback (Unable to reach Ollama at http://127.0.0.1:11434: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>)
+Related events: 1
+Escalation required: No
+Why it matters: UDP connection observed to 192.168.56.255:137
+Next actions:
+- Confirm whether the UDP destination and service are expected.
+- Continue triage and tune detections if activity is benign.
+
+Incident 5: Connection activity from 172.16.0.23 to 129.6.15.28
+Severity: medium
+Analysis source: fallback (Unable to reach Ollama at http://127.0.0.1:11434: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>)
+Related events: 1
+Escalation required: No
+Why it matters: UDP connection observed to 129.6.15.28:123
+Next actions:
+- Confirm whether the UDP destination and service are expected.
+- Continue triage and tune detections if activity is benign.

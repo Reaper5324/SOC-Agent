@@ -1,0 +1,7 @@
+{"timestamp":"2026-02-04T12:15:01.111111","flow_id":1111,"event_type":"alert","src_ip":"192.168.1.77","src_port":51515,"dest_ip":"45.83.64.1","dest_port":4444,"proto":"TCP","alert":{"signature":"ET TROJAN C2 Beacon Detected","signature_id":2030012,"severity":1},"source_tool":"suricata"}
+
+  {"timestamp":"2026-02-04T12:15:05.222222","flow_id":1112,"event_type":"alert","src_ip":"192.168.1.88","src_port":3389,"dest_ip":"203.0.113.45","dest_port":3389,"proto":"TCP","alert":{"signature":"ET SCAN Possible RDP Brute Force","signature_id":2010935,"severity":2},"source_tool":"suricata"}
+
+  {"timestamp":"2026-02-04T12:15:10.333333","flow_id":1113,"event_type":"dns","src_ip":"192.168.1.20","dest_ip":"8.8.4.4","proto":"UDP","dns":{"type":"query","rrname":"update.microsoft.com"},"source_tool":"suricata"}
+
+  {"timestamp":"2026-02-04T12:15:15.444444","flow_id":1114,"event_type":"http","src_ip":"192.168.1.25","src_port":51234,"dest_ip":"93.184.216.34","dest_port":80,"proto":"TCP","http":{"hostname":"example.com","url":"/index.html"},"source_tool":"suricata"}

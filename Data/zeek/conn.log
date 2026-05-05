@@ -1,0 +1,16 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	conn
+#open	2026-02-04-12-00-00
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	proto	service	duration	orig_bytes	resp_bytes	conn_state	local_orig	local_resp	missed_bytes	history	orig_pkts	orig_ip_bytes	resp_pkts	resp_ip_bytes
+#types	time	string	addr	port	addr	port	enum	string	interval	count	count	string	bool	bool	count	string	count	count	count	count
+
+
+1707048100.111111	Cudp001	10.0.0.5	1900	239.255.255.250	1900	udp	ssdp	0.001	90	0	S0	-	-	0	D	1	118	0	0
+1707048102.222222	Cudp002	192.168.56.12	137	192.168.56.255	137	udp	nbns	0.004	78	0	S0	-	-	0	D	1	106	0	0
+1707048104.333333	Cudp003	172.16.0.23	123	129.6.15.28	123	udp	ntp	0.012	48	48	SF	-	-	0	Dd	2	120	2	120
+1707048110.444444	Ctcp001	192.168.1.100	52344	93.184.216.34	80	tcp	http	3.210	3120	8450	SF	-	-	0	ShADadfF	25	4120	30	9120
+1707048115.555555	Ctcp002	192.168.1.101	44321	142.250.72.14	443	tcp	ssl	8.921	10234	20450	SF	-	-	0	ShADadfF	60	15000	55	22000
+1707048120.666666	Cicmp01	192.168.1.50	8	192.168.1.1	0	icmp	-	0.010	64	64	SF	-	-	0	Dd	1	92	1	92
